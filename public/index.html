@@ -12,6 +12,7 @@
     <script src="js/jquery-1.11.3.js"></script>
     <script src="js/header.js"></script>
     <script src="js/footer.js"></script>
+    <script src="js/index.js"></script>
     <title>明星网</title>
 </head>
 <body>
@@ -21,10 +22,10 @@
 <!--中间-->
 <div class="blank"></div>
 <div class="container">
-    <div class="carousel" id="banner" data-ride="carousel">
+    <div  id="banner" >
         <!--左轮播-->
-        <div class="carousel-inner left-lunbo">
-            <div class="carousel-item active">
+        <div class=" left-lunbo">
+            <div class="hidelist in">
                 <a href="#" class="my-a" title="范冰冰因税务问题被国家机关重罚，崔永元依法可获 2 万至 10万奖励。">
                     <img src="img/index/binbin.jpg">
                       <span class="my-span">
@@ -33,7 +34,7 @@
                   </span>
                 </a>
             </div>
-            <div class="carousel-item">
+            <div class="hidelist">
                 <a href="#" class="my-a" title="网传巩俐天海佑希出演陈凯歌新戏《白蛇》，对此，巩俐方回应称：目前我们团队没有收到任何相关的信息，谢谢大家的关心。">
                     <img src="img/index/gonli.jpg">
                       <span class="my-span">
@@ -42,7 +43,7 @@
                       </span>
                 </a>
             </div>
-            <div class="carousel-item">
+            <div class="hidelist">
                 <a href="#" class="my-a"
                    title="爆料媒体今天公布了具荷拉在地下停车场向C某下跪的监控视频，并还爆料因C某始终不肯删掉视频，具荷拉已在上月27日以强迫、胁迫、性暴力等罪名向警方追加举报了C某。">
                     <img src="img/index/juhela.jpg">
@@ -52,7 +53,7 @@
                       </span>
                 </a>
             </div>
-            <div class="carousel-item">
+            <div class="hidelist">
                 <a href="#" class="my-a"
                    title="林更新被曝与王丽坤已分手另结新欢？当初他被传绯闻说是和王丽坤在一起了，但是网友们除了惊讶之余，也还蛮祝福他们的。近日被网友们拍到深夜和朋友聚会，而期间和一位年轻的女生举止非常的亲密，让网友们也有些疑惑。总之，让人羡慕！ ">
                     <img src="img/index/lingenxin.jpg">
@@ -65,8 +66,8 @@
         </div>
         <!--右轮播-->
         <div class="right-lunbo">
-            <ul class="js_lunbo">
-                <li ><a href="/news/index/id/326461.html" title="范冰冰因税务问题被国家机关重罚，崔永元依法可获 2 万至 10 万奖励。">
+            <ul class="js_lunbo h-100 mb-0">
+                <li class="in-r"><a  href="/news/index/id/326461.html" title="范冰冰因税务问题被国家机关重罚，崔永元依法可获 2 万至 10 万奖励。">
                     <b></b>
 
                     <div>
@@ -146,15 +147,15 @@
         <ul class="u-01 ">
             <li>
                 <a href="#">
-                      <span class="tx">
-                          <img src="img/index/luhan.jpg">
-                            <h3>鹿晗</h3>
-                      </span>
-                      <span class="detail">
-                          <h3>鹿晗</h3>
-					<p>鹿晗（LU HAN），1990年4月20</p>
-					<span class="tx-more">MORE</span>
-                      </span>
+                    <span class="tx">
+                        <img src="img/index/luhan.jpg">
+                        
+                    </span>
+                        <span class="detail">
+                        <h3>鹿晗</h3>
+                        <p>鹿晗（LU HAN），1990年4月20</p>
+                        <span class="tx-more">MORE</span>
+                    </span>
                 </a>
             </li>
 
@@ -162,7 +163,7 @@
                 <a href="#">
                       <span class="tx">
                           <img src="img/index/reba.jpg">
-                            <h3>迪丽热巴</h3>
+                           
                       </span>
                       <span class="detail">
                           <h3>迪丽热巴</h3>
@@ -175,12 +176,12 @@
                 <a href="#">
                       <span class="tx">
                           <img src="img/index/liying.jpg">
-                            <h3>赵丽颖</h3>
+                          
                       </span>
                       <span class="detail">
                           <h3>赵丽颖</h3>
 					<p>赵丽颖，1987年10月16日出生于河北</p>
-					<span class="tx-more">MORE</span>
+					<span class="tx-more">MORE</span>  
                       </span>
                 </a>
             </li>
@@ -188,7 +189,7 @@
                 <a href="#">
                       <span class="tx">
                           <img src="img/index/yangmi.jpg">
-                            <h3>杨幂</h3>
+                           
                       </span>
                       <span class="detail">
                           <h3>杨幂</h3>
@@ -201,7 +202,7 @@
                 <a href="#">
                       <span class="tx">
                           <img src="img/index/fbb.jpg">
-                            <h3>范冰冰</h3>
+                           
                       </span>
                       <span class="detail">
                           <h3>范冰冰</h3>
@@ -212,22 +213,21 @@
             </li>
             <li>
                 <a href="#">
-                      <span class="tx">
+                    <span class="tx">
                           <img src="img/index/wjk.jpg">
-                            <h3>王俊凯</h3>
-                      </span>
-                      <span class="detail">
-                          <h3>王俊凯</h3>
-					<p>王俊凯是TF BOYS组合成员之一，于2</p>
-					<span class="tx-more">MORE</span>
-                      </span>
+                    </span>
+                    <span class="detail">
+                        <h3>王俊凯</h3>
+                        <p>王俊凯是TF BOYS组合成员之一，于2</p>
+                        <span class="tx-more">MORE</span>
+                    </span>
                 </a>
             </li>
             <li>
                 <a href="#">
                       <span class="tx">
                           <img src="img/index/yyqx.jpg">
-                            <h3>易烊千玺</h3>
+                           
                       </span>
                       <span class="detail">
                           <h3>易烊千玺</h3>
@@ -240,7 +240,7 @@
                 <a href="#">
                       <span class="tx">
                           <img src="img/index/wy.jpg">
-                            <h3>王源</h3>
+                           
                       </span>
                       <span class="detail">
                           <h3>王源</h3>
@@ -253,7 +253,7 @@
                 <a href="#">
                       <span class="tx">
                           <img src="img/index/wyf.jpg">
-                            <h3>吴亦凡</h3>
+                            
                       </span>
                       <span class="detail">
                           <h3>吴亦凡</h3>
@@ -266,7 +266,7 @@
                 <a href="#">
                       <span class="tx">
                           <img src="img/index/xzq.jpg">
-                            <h3>薛之谦</h3>
+                           
                       </span>
                       <span class="detail">
                           <h3>薛之谦</h3>
@@ -279,7 +279,7 @@
                 <a href="#">
                       <span class="tx">
                           <img src="img/index/zyx.jpg">
-                            <h3>张艺兴</h3>
+                           
                       </span>
                       <span class="detail">
                           <h3>张艺兴</h3>
@@ -292,7 +292,7 @@
                 <a href="#">
                       <span class="tx">
                           <img src="img/index/lgx.jpg">
-                            <h3>林更新</h3>
+                            
                       </span>
                       <span class="detail">
                           <h3>林更新</h3>
@@ -305,7 +305,7 @@
                 <a href="#">
                       <span class="tx">
                           <img src="img/index/cxd.jpg">
-                            <h3>陈学冬</h3>
+                            
                       </span>
                       <span class="detail">
                           <h3>陈学冬</h3>
@@ -318,7 +318,7 @@
                 <a href="#">
                       <span class="tx">
                           <img src="img/index/hg.jpg">
-                            <h3>胡歌</h3>
+                            
                       </span>
                       <span class="detail">
                           <h3>胡歌</h3>
@@ -866,7 +866,7 @@
                 <b><i></i>友情链接<span>&gt;&gt;</span></b>
                 <a href="http://www.d1xz.net/" target="_blank">星座网</a><a href="http://www.tangdou.com/" target="_blank">糖豆网</a><a href="http://star.pclady.com.cn" target="_blank">PClady明星</a><a href="http://www.shcaoan.com/" target="_blank">娱乐新闻</a><a href="http://yule.iqiyi.com/" target="_blank">奇艺娱乐</a><a href="http://www.zybus.com/" target="_blank">综艺巴士</a><a href="http://www.faxingw.cn/" target="_blank">发型屋</a><a href="http://www.shangc.net/" target="_blank">尚之潮网</a><a href="http://www.4493.com/" target="_blank">4493美图</a><a href="http://bgl.shenchuang.com/" target="_blank">八卦新闻</a><a href="http://www.xzw.com/" target="_blank">星座</a><a href="http://ent.qianzhan.com/" target="_blank">娱乐新闻</a><a href="http://www.ishowx.com/" target="_blank">爱秀时尚网</a><a href="http://www.nanrenwo.net/" target="_blank">男人时尚</a><a href="http://www.cnys.com/" target="_blank">养生小常识</a><a href="http://www.laonanren.com/" target="_blank">老男人</a><a href="http://www.ankangwang.com/" target="_blank">起名网</a><a href="http://www.fengdu100.com/" target="_blank">风度男人网</a><a href="http://www.yw11.com/" target="_blank">免费起名网</a><a href="http://www.oicq88.com/" target="_blank">QQ网名</a><a href="http://tongxiehui.net/" target="_blank">童鞋会</a><a href="http://www.4hw.com.cn/" target="_blank">四海网</a><a href="http://www.meiguoshenpo.com" target="_blank">美国神婆</a><a href="http://www.wed114.cn" target="_blank">婚纱摄影</a><a href="http://www.boosj.com/" target="_blank">播视网视频</a><a href="http://www.deyi.com" target="_blank">得意生活</a><a href="http://www.jushuo.com" target="_blank">据说网</a><a href="http://www.chinasspp.com" target="_blank">服装品牌</a><a href="http://www.lady8844.com/" target="_blank">爱美女性网</a><a href="http://www.99166.com/" target="_blank">算命</a><a href="http://www.nvsay.com/" target="_blank">韩国娱乐新闻</a><a href="http://www.86kx.com/" target="_blank">白领网</a><a href="http://www.g312.com" target="_blank">剧情介绍</a><a href="http://www.kan300.com" target="_blank">日本动漫</a><a href="http://nvsheng.com/" target="_blank">女生私房话</a><a href="http://www.piaoliang.com/" target="_blank">漂亮女人</a><a href="http://tianqi.cncn.com/" target="_blank">天气预报查询</a><a href="http://www.27270.com/" target="_blank">图片大全</a><a href="http://cn163.net" target="_blank">美剧</a><a href="http://juji123.com/" target="_blank">最新电影网</a><a href="http://www.youbian.com/" target="_blank">邮编生活网</a><a href="http://vogue.moonbasa.com/" target="_blank">时尚搭配</a><a href="http://www.wenzhousx.com/" target="_blank">温州</a><a href="http://www.2liang.net/" target="_blank">爱靓网</a><a href="http://www.lygnews.com.cn/" target="_blank">杭州在线</a><a href="http://www.08160.cn/" target="_blank">狂想曲</a><a href="http://www.xingzuo.com" target="_blank">星座运势</a><a href="http://www.cwz123.com" target="_blank">违章查询</a><a href="http://www.shengxiao520.com/" target="_blank">生肖配对</a><a href="http://www.menworld.org/" target="_blank">男人网</a><a href="http://yl.szhk.com" target="_blank">最新娱乐新闻</a><a href="http://www.xiziwang.net" target="_blank">发型</a><a href="http://www.8794.cn" target="_blank">8794网</a><a href="http://www.rcys.com" target="_blank">日常养生</a><a href="http://www.qinbaol.com/" target="_blank">秦巴娱乐</a><a href="http://www.ysmiji.com/" target="_blank">养生秘籍</a><a href="http://www.vmao.com" target="_blank">v猫生活</a><a href="https://www.jianfei.com" target="_blank">中国减肥网</a>
             </p>
-    <div class="clear"></div>
+    <div class="clear:both"></div>
 </div>
 <!--底部-->
 <footer id="footer">

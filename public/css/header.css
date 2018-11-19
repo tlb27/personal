@@ -3,6 +3,8 @@ div.my-bg{
     width:100%;
 }
 .header{
+    margin: 0 auto;
+    width: 1100px;
     height: 64px;
 }
 .nav-background {
@@ -46,6 +48,7 @@ div.my-bg{
 }
 .daohang li:hover ul{
    display: block;
+   padding: 0;
 }
 
 .daohang li a:hover {
