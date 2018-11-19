@@ -1,0 +1,125 @@
+#main{
+    width: 1100px;
+    margin: 2rem auto;
+}
+div.blank{
+    width: 100%;
+    height: 2rem;
+}
+.pic_bar ul{
+    clear: both;
+    width: 100%;
+    list-style: none;
+    height: 3rem;
+    padding-left:0; 
+    background-image: linear-gradient(135deg ,#ff4c25, #502dff);
+    margin: 0;
+    line-height: 3rem;
+    text-align: center
+}
+.pic_bar ul li{
+    display: inline-block;
+    height: 2rem;
+    line-height: 2rem;
+    padding: 0 18px;
+    border-radius: 10px;
+    margin:0 0.5rem; 
+    background:rgb(201, 189, 189);
+    font-size: 1rem;
+    color: #2c2c2c;
+    cursor: pointer;
+}
+.pic_bar ul li.link{
+    background-image:linear-gradient(135deg ,#666, #ddd,#666);
+    box-shadow: 0 0 4px rgb(35, 8, 192);
+}
+.pic_bar ul li:hover{
+    background-image:linear-gradient(135deg ,#666, #ddd,#666);
+    box-shadow: 0 0 4px rgb(35, 8, 192);
+}
+#main>.pics_list{
+    width: 100%;
+    display: flex
+}
+#main>.pics_list>#pics-list{
+    list-style: none;
+    padding:0;
+    margin:20px 0;
+    flex-wrap: wrap;
+}
+#main>.pics_list>#pics-list>div{
+    display: inline-block;
+    width: 256px;
+}
+#main>.pics_list>#pics-list>div>a{
+    text-decoration: none;
+    color: #666;
+}
+#main>.pics_list>#pics-list>div>a>p{
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+#main .fengye{
+    text-align: center
+}
+#main .fengye .fenyebar{
+list-style: none;
+padding-left:0;
+height:40px;
+overflow: hidden; 
+margin: 0 auto;
+}
+#main>.fengye>.fenyebar li.ft{
+    display: inline-block;
+    width: 70px;
+    height: 40px;
+    background: #eeeeee;
+    color: #333;
+    line-height: 40px;
+    margin: 0 6px;
+}
+#main>.fengye>.fenyebar li.st{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #eeeeee;
+    color: #333;
+    line-height: 40px;
+    margin: 0 6px;
+    vertical-align: middle;
+}
+#main>.fengye>.fenyebar li.nt{
+    display: inline-block;
+    width: 50px;
+    height: 40px;
+    background: #eeeeee;
+    margin: 0 6px;
+    vertical-align: middle;
+}
+ #main>.fengye>.fenyebar li.nt>span.lt{
+    background: url(/img/starlist/btn_up01.png);
+    display: block;
+    width: 12px;
+    height: 22px;
+    margin-top: 9px;
+    margin-left: 20px;
+} 
+#main>.fengye>.fenyebar li.nt>span.gt{
+    background: url(/img/starlist/btn_up11.png);
+    display: block;
+    width: 12px;
+    height: 22px;
+    margin-top: 9px;
+    margin-left: 20px;
+} 
+#main>.fengye>.fenyebar li:hover{
+    background: #e30002;
+    color: #fff;
+}
+#main>.fengye>.fenyebar li.active{
+    background: #e30002;
+    color: #fff;
+}
