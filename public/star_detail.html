@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/star_detail.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/star_detail.js"></script>
+    <title></title>
+</head>
+<body>
+  <!--头部-->
+  <header id="header">
+  </header>
+  <div class="blank"></div>
+  <!-- 侧边栏 -->
+  <div class="sidebar">
+    <ul>
+      <li class="add" ><i></i> <h3 onclick="getinfo('personal.html')">个人首页</h3> </li>
+      <li > <i></i> <h3  onclick="getinfo('person_new.html')">星闻</h3> </li>
+      <li><i></i> <h3  onclick="getinfo('person_photo.html')">图库</h3> </li>
+      <li><i></i> <h3  onclick="getinfo('person_info.html')">个人资料</h3> </li>
+    </ul>
+  </div>
+  <!--主体-->
+  <div id="main">
+    <!-- 个人首页 -->
+    <div class="personal" >
+    <div class="data">
+        <span class="info"><p>鹿晗（LU HAN），1990年4月20日出生于北京，中国男演员、歌手。2008年，鹿晗赴韩国留学，留学期间在明洞逛街时被韩国SM娱乐公司星探发掘。2010年签约成为旗下练习生。2011年12月27日通过EXO官网公开写真和预告视频与公众见面。2012年4月8日以EXO/EXO-M组合成员身份正式出道，在组合里担任主唱、领舞、门面担当。2013年7月-9月，在组合首张专辑剧情版录影带上、下两部中担任男主角。2014年6月，出演导演陈正道执导的中韩合拍电影《重返20岁》。8月19日，个人微博单条评论创吉尼斯</p></span>
+        <span class="photo"><img src="img/starlist/luhan.jpg" alt="鹿晗"></span>
+        <span class="name"><h3>鹿晗<br><i>Luhan</i></h3></span>
+    </div>
+    <div class="personal_bg"></div>
+    </div>
+    <section id="detail" >
+    </section>
+  
+  </div>
+
+  <div class="blank2"></div>
+  <!--底部-->
+  <footer id="footer">
+  </footer>
+  <script>
+      function getinfo(path){
+        $.ajax({
+            url:"http://localhost:3000/"+path,
+            type:"get",
+            success:function(res){
+                $("#main #detail").replaceWith(res)
+                console.log(this.url)
+            }
+        })
+    }
+      
+  </script>
+</body>
+</html>

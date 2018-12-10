@@ -2,67 +2,144 @@
 <div id="header" class="my-bg ">
     <div class="nav-background d-none"></div>
 
-    <div class="header" >
+    <div class="header" name="top">
         <div id="logo" >
             <a href="index.html"><img src="img/header/logo.png"></a>
         </div>
         <div id="nav" >
             <ul class="daohang">
                 <li>
-                    <a href="#">明星网</a>
+                    <a href="http://localhost:3000/index.html">明星网</a>
                 </li>
                 <li >
-                    <a href="#">资料</a>
+                    <a href="http://localhost:3000/star_lei.html">资料</a>
                     <ul class="daohang1" style="margin-left:0px" >
-                        <li><a href="/ziliao/index/type/neidi.html">内地明星</a></li>
-                        <li><a href="/ziliao/index/type/gangtai.html">港台明星</a></li>
-                        <li><a href="/ziliao/index/type/rihan.html">日韩明星</a></li>
-                        <li><a href="/ziliao/index/type/oumei.html">欧美明星</a></li>
+                        <li><a href="star_lei.html?neidi">内地明星</a></li>
+                        <li><a href="star_lei.html?gantai">港台明星</a></li>
+                        <li><a href="star_lei.html?rihan">日韩明星</a></li>
+                        <li><a href="star_lei.html?oumei">欧美明星</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#" >图库</a>
+                    <a href="http://localhost:3000/star_pics.html" >图库</a>
                     <ul class="daohang1" style="margin-left:-78px">
-                        <li><a href="/ziliao/index/type/neidi.html">明星写真</a></li>
-                        <li><a href="/ziliao/index/type/gangtai.html">港台明星</a></li>
-                        <li><a href="/ziliao/index/type/rihan.html">日韩明星</a></li>
-                        <li><a href="/ziliao/index/type/oumei.html">欧美明星</a></li>
+                        <li><a href="star_pics.html?mxxz">明星写真</a></li>
+                        <li><a href="star_pics.html?shz">生活照</a></li>
+                        <li><a href="star_pics.html?hdxc">活动现场</a></li>
+                        <li><a href="star_pics.html?ysjz">影视剧照</a></li>
                     </ul>
                 </li>
                 <li >
-                    <a href="#">星闻</a>
+                    <a href="http://localhost:3000/news.html">星闻</a>
                     <ul class="daohang1" style="margin-left:-156px">
-                        <li><a href="/ziliao/index/type/neidi.html">活动</a></li>
-                        <li><a href="/ziliao/index/type/gangtai.html">绯闻</a></li>
-                        <li><a href="/ziliao/index/type/rihan.html">图片</a></li>
-                        <li><a href="/ziliao/index/type/oumei.html">爆料台</a></li>
-                        <li><a href="/ziliao/index/type/neidi.html">综艺</a></li>
-                        <li><a href="/ziliao/index/type/gangtai.html">电视</a></li>
-                        <li><a href="/ziliao/index/type/rihan.html">电影</a></li>
-                        <li><a href="/ziliao/index/type/oumei.html">音乐</a></li>
-                        <li><a href="/ziliao/index/type/oumei.html">动态</a></li>
+                        <li><a href="news.html?huodong">活动</a></li>
+                        <li><a href="news.html?feiwen">绯闻</a></li>
+                        <li><a href="news.html?tupian">图片</a></li>
+                        <li><a href="news.html?baoliao">爆料台</a></li>
+                        <li><a href="news.html?zongyi">综艺</a></li>
+                        <li><a href="news.html?dianshi">电视</a></li>
+                        <li><a href="news.html?dianying">电影</a></li>
+                        <li><a href="news.html?yinyue">音乐</a></li>
+                        <li><a href="news.html?dongtai">动态</a></li>
                     </ul>
                 </li>
             </ul>
         </div>
         <div >
             <div class="search ">
-                <input type="text" id="searchtext" placeholder="请输入关键字" >
+                <input type="text" id="searchtext" placeholder="请输入明星名字" >
                 <a href="#"><img src="img/header/search01.png"></a>
             </div>
         </div>
         <div id="right" >
             <div class="history" >
-                <a href="#">
+                <a href="">
                     <img src="img/header/history01.png"><br>
                     <b>历史</b>
                 </a>
+                <ul class="history_inner"><li><a href="index.html">明星网</a></li></ul>
+                <div class="jianjiao"></div>
             </div>
             <div class="collect">
-                <a href="#">
-                    <img src="img/header/collect01.png"><br>
-                    <b>收藏</b>
+                <a id="signin" style="cursor: pointer;">
+                    <img src="img/header/huiyuan.png"><br>
+                    <b>登陆</b>
                 </a>
+                <a id="signout" style="cursor: pointer;">
+                    <img src="img/header/zhuxiao.png"><br>
+                    <b>注销</b>
+                </a>
+                <div id="model_bg" class="m_bg hide">
+                    <div id="lg_rg" class="l_r hide">
+                        <div id="login">
+                            <header>
+                                <h3>Login</h3>
+                            </header>
+                            <form class="content" name="login">
+                                <p>
+                                    <label>
+                                        <input type="text" name="uname" class="uname" required>
+                                        <span class="label">用户名</span>
+                                        <img class="true"   src="img/header/true.png" >
+                                    </label>
+                                    <label>
+                                        <input type="password" name="pswd" class="upwd" required>
+                                        <span class="label">密码</span>
+                                        <img class="true" src="img/header/true.png" >
+                                    </label>
+                                </p>
+                            </form>
+                            <footer>
+                                <p>
+                                    <span>没账号？去<a >注册</a></span>
+                                    <button type="button" data-modal-btn="dismiss" class="login_btn  close1 light">Cancel</button>
+                                    <button type="button" data-modal-btn="action" class="login_btn primary">Login</button>
+                                </p>
+                            </footer>
+                        </div>
+                        <div id="register">
+                                <header>
+                                    <h3>Register</h3>
+                                </header>
+                                <form class="content" name="login">
+                                    <p class="mb-0">
+                                        <label >
+                                            <img class="true" src="img/header/true.png" >
+                                            <img class="flase" src="img/header/false.png" >
+                                            <input type="text" name="id" class="runame" placeholder="请输入2-4个汉字用户名" required>
+                                          
+                                        </label>
+                                         <label>
+                                            <img class="true" src="img/header/true.png" >
+                                            <img class="flase" src="img/header/false.png" >
+                                            <input type="password" name="eupwd" placeholder="请输入6-12位英文或数字可包含下划线的密码" class="rupwd" required>
+                                        </label>
+                                        <label>
+                                             <img class="true" src="img/header/true.png" >
+                                           <img class="flase" src="img/header/false.png" >
+                                            <input type="text" name="email" class="email" placeholder="请输入包括@和.在内的邮箱账号" required>
+                                        </label>
+                                       
+                                        <div class="mylabel">
+                                          <label style="display:inline;padding-bottom: 0px;">男：</label> 
+                                          <input type="radio" name="gender"id="man" value="男"> 
+                                           <label style="display:inline">女：</label>
+                                           <input type="radio" name="gender"id="woman" value="女">
+                                        </div>
+                                    </p>
+                                </form>
+                                <footer>
+                                    <p>
+                                        <span>已有账号？去<a >登陆</a></span>
+                                        <button type="button" data-modal-btn="dismiss" class="login_btn close1 light">Cancel</button>
+                                        <button type="button" data-modal-btn="action" class="login_btn disabled primary" >注册</button>
+                                    </p>
+                                </footer>
+                        </div>
+                    </div>
+                </div>
+                <ul  class="history_inner"><li>欢迎您，<span></span></li></ul>
+                <div  class="jianjiao"></div>
             </div>
         </div>
   

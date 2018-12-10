@@ -2,6 +2,10 @@
     width: 1100px;
     margin: 2rem auto;
 }
+#main a{
+    text-decoration: none;
+    color:#333;
+}
 div.blank{
     width: 100%;
     height: 2rem;
@@ -21,7 +25,6 @@ div.blank{
     display: inline-block;
     height: 2rem;
     line-height: 2rem;
-    padding: 0 18px;
     border-radius: 10px;
     margin:0 0.5rem; 
     background:rgb(201, 189, 189);
@@ -29,31 +32,69 @@ div.blank{
     color: #2c2c2c;
     cursor: pointer;
 }
-.pic_bar ul li.link{
+.pic_bar ul li>a{
+    display: inline-block;
+    height: 2rem;
+    line-height: 2rem;
+    padding: 0 18px;
+    border-radius: 10px;
+    background:rgb(201, 189, 189);
+    font-size: 1rem;
+    color: #2c2c2c;
+    cursor: pointer;
+}
+.pic_bar ul li>a.link{
     background-image:linear-gradient(135deg ,#666, #ddd,#666);
     box-shadow: 0 0 4px rgb(35, 8, 192);
 }
-.pic_bar ul li:hover{
+.pic_bar ul li>a:hover{
     background-image:linear-gradient(135deg ,#666, #ddd,#666);
     box-shadow: 0 0 4px rgb(35, 8, 192);
 }
 #main>.pics_list{
     width: 100%;
-    display: flex
+    
 }
 #main>.pics_list>#pics-list{
     list-style: none;
     padding:0;
     margin:20px 0;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
     flex-wrap: wrap;
 }
 #main>.pics_list>#pics-list>div{
-    display: inline-block;
-    width: 256px;
+    width: 258px;
+    height: 386px;
+    float: left;
+    border:1px dotted #ccc;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+#pics-list>div>a>.cove{
+    position: absolute;
+    background: rgba(75,75,75,0.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    padding-top: 193px;
+    left: 258px;
+}
+#pics-list>div>a>.cove p{
+    font-size: 14px;
+    color:#fff;
+    margin: 0;
+	text-align: center;
 }
 #main>.pics_list>#pics-list>div>a{
     text-decoration: none;
-    color: #666;
+    display: block;
+    height: 100%;
+    width: 100%;
+    
 }
 #main>.pics_list>#pics-list>div>a>p{
     padding: 0;
@@ -71,6 +112,9 @@ padding-left:0;
 height:40px;
 overflow: hidden; 
 margin: 0 auto;
+}
+.my-position .fengye .fenyebar li{
+    cursor: pointer;
 }
 #main>.fengye>.fenyebar li.ft{
     display: inline-block;

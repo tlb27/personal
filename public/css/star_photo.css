@@ -1,0 +1,339 @@
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+
+
+#main{
+    width: 1100px;
+    margin: 0 auto;
+    clear: both;
+    position: relative;
+}
+#main .viewTitle{
+clear: both;
+width: 100%;
+float: left;
+position: relative;
+}
+#main .viewTitle h1{
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 0 28px 0;
+}
+#main .viewTitle h1 i{
+    font-style: normal;
+    color: #999;
+}
+#main .viewTitle h1 font {
+    color: #e30002;
+}
+/* 图片切换 */
+#main .viewPhoto{
+    clear: both;
+    width: 100%;
+    text-align: center;
+    margin-bottom:20px; 
+}
+#main .viewPhoto #viewk{
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+#viewk ul li span img{
+    height: 100%;
+}
+#viewk ul{
+    position: absolute;
+    display: flex;
+    left:0;
+}
+#viewk li{
+float: left;
+width: 1100px;
+
+}
+#viewk li span{
+    display: inline-block;
+    height:600px;
+}
+#viewk>span{
+    display: block;
+    width: 25px;
+    height: 63px;
+    opacity: 0.4;
+    position: absolute;
+    top: 50%;
+    margin: -31px 0 0 0;
+    z-index: 2;
+}
+#left1{
+    background: url(../img/star_photo/btn_up.png) no-repeat center center;
+    left:20px;
+}
+#right1{
+    background: url(../img/star_photo/btn_down.png) no-repeat center center;
+    right: 20px;
+}
+#left1:hover,#right1:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+#left2{
+    background:#111 url(../img/star_photo/btn_up01.png) no-repeat center center;
+    float: left;
+}
+#right2{
+    background:#111 url(../img/star_photo/btn_up11.png) no-repeat center center;
+    float: right;
+}
+#left2:hover{
+    background: #e30002 url(../img/star_photo/btn_up01.png) no-repeat center center;
+    cursor: pointer;
+}
+#right2:hover{
+    background: #e30002 url(../img/star_photo/btn_up11.png) no-repeat center center;
+    cursor: pointer;
+}
+#main .smallPhoto{
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+#main .smallPhoto>span {
+    display: block;
+    width: 30px;
+    height: 90px;
+}
+#main .smallPhoto>div.list{
+    width: 1020px;
+    margin-left: 15px;
+    float: left;
+    height: 90px;
+    position: relative;
+    overflow: hidden;
+}
+#main .smallPhoto>div.list>#list_son{
+    position: absolute;
+    overflow: hidden;
+    display:flex;  
+}
+#main .smallPhoto>div.list>#list_son>.son{
+    display: inline-block;
+    width: 146px;
+    height: 90px;
+    overflow: hidden;
+    cursor: pointer;
+}
+#main .smallPhoto>div.list>#list_son .son span{
+    display: block;
+    box-sizing: content-box;
+    width: 124px;
+    overflow: hidden;
+    height: 84px;
+    border: 3px #fff solid;
+}
+#main .smallPhoto>div.list>#list_son>.son>span>img{
+    width: 100%;
+    display: block;
+}
+#main .smallPhoto>div.list>#list_son>.son>span.active{
+    border: 3px solid #e30002;
+}
+/* 相关推荐 */
+
+
+#main .recommend .recommend_list{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 0;
+}
+#main .recommend .recommend_list>div span{
+    width: 168px;
+    height: 200px;
+    display: block;
+    overflow: hidden;
+}
+#main .recommend .recommend_list>div>a{
+    text-decoration: none;
+}
+#main .recommend .recommend_list>div>a:hover h3{
+    text-decoration: none;
+    color: #e30002;
+}
+#main .recommend .recommend_list>div>a>span>img{
+    width: 100%;
+}
+#main .recommend .recommend_list>div>a>h3{
+    clear: both;
+    width: 100%;
+    line-height: 24px;
+    height: 24px;
+    text-overflow: ellipsis;
+    font-size: 15px;
+    color: #333;
+    text-align: center;
+    margin: 9px 0 0 0;
+}
+
+/* 相关资讯 */
+
+.starnew_cd{
+    width: 535px;
+}
+.blank2{
+    width: 100%;
+    height: 30px;
+    clear: both;
+}
+.starnew .t_02 h3{
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    float: left;
+    line-height: 18px;
+    border-left: 3px solid #e30002;
+    padding: 0 0 0 12px;
+}
+.starnew .t_02 i{
+    width: 1px;
+    height: 14px;
+    display: block;
+    background-color: #e9e9e9;
+    float: left;
+    margin: 2px 20px;
+}
+.starnew .t_02 a{
+    float: left;
+    font-size: 14px;
+    color: #999;
+}
+.starnew .t_02 a:hover{
+    color: #e30002;
+}
+ul.list {
+    clear: both;
+    width: 100%;
+    margin: 6px 0 0 0;
+    float: left;
+    padding: 0;
+}
+ul.list li{
+    clear: both;
+    width: 100%;
+    height: 129px;
+    border-bottom: 1px dotted #ddd;
+    margin: 19px 0 0 0;
+    float: left;
+}
+.fl{
+    float:left;
+}
+.fr{
+    float: right;
+}
+.starnew .list li span.fl{
+    width: 150px;
+    height: 110px;
+    display: block;
+    overflow: hidden;
+}
+.starnew .list li span.fl img{
+    width: 100%;
+    display: block;
+    border: 0px;
+}
+.starnew .list li span.fr{
+    width: 370px;
+    display: block;
+}
+span.fr a{
+    text-decoration: none;
+    color: #666;
+}
+span.fr a h3{
+    font-size: 18px;
+    color: #333;
+    line-height: 26px;
+    height: 26px;
+    overflow: hidden;
+}
+span.fr a h3:hover {
+color:red;
+}
+span.fr p{
+    font-size: 14px;
+    color: #666;
+    line-height: 22px;
+    height: 44px;
+    overflow: hidden;
+    margin: 8px 0 0 0;
+}
+span.fr i.time{
+    background: url(../img/index/time_01.png) no-repeat left center;
+    padding: 0 0 0 19px;
+    margin-right: 20px;
+}
+span.fr i{
+    display: block;
+    float: left;
+    font-style: normal;
+    font-size: 12px;
+    color: #999;
+    line-height: 20px;
+    margin: 5px 0 0 0;
+}
+/* 热门推荐 */
+.page_starphoto {
+    clear: both;
+    width: 100%;
+    margin: 7px 0 0 0;
+}
+.page_starphoto li {
+    width: 168px;
+    float: left;
+    margin: 21px 18.4px 0 0;
+}
+.page_starphoto li span {
+    width: 168px;
+    height: 200px;
+    display: block;
+    overflow: hidden;
+}
+.page_starphoto li span img {
+    width: 100%;
+    display: block;
+    border: 0;
+}
+.page_starphoto li a{
+        text-decoration: none;
+        color:#666;
+}
+.page_starphoto li:hover h3{
+    color: #e30002;
+}
+.page_starphoto li h3 {
+    clear: both;
+    width: 100%;
+    line-height: 24px;
+    height: 24px;
+    overflow: hidden;
+    font-size: 15px;
+    color: #333;
+    text-align: center;
+    margin: 9px 0 0 0;
+}
+li.last{
+    margin-right:0;
+}
+.blank70{
+    height: 70px;
+    width: 100%;
+}
