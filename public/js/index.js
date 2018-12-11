@@ -1,4 +1,30 @@
 $(function(){
+    $.ajax({
+        url:"http://localhost:3000/star/getlist",
+        type:"get",
+        dataType:"json",
+        success: function(res) {
+            var html=''
+            var ul=$(".hot .u-01")
+            for(var p of res){
+            var {pid,star_name,introductio,category}=p;
+            console.log(p)
+             html+=`<li>
+            <a href="star_detail.html?star_name=${star_name}">
+                <span class="tx">
+                    <img src="${category}">
+                </span>
+                    <span class="detail">
+                    <h3>${star_name}</h3>
+                    <p>${introductio}</p>
+                    <span class="tx-more">MORE</span>
+                </span>
+            </a>
+        </li>`
+            }
+            ul.html(html)
+        }
+    })
     //轮播图
     var timer=setInterval(task,4000)
     $("#banner")

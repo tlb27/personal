@@ -61,14 +61,15 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between
+    overflow: hidden;
+}
+.starlist ul li:nth-child(6n+6){
+margin-right: 0;
 }
 .starlist ul li{
     width: 10.5rem;
-    
-    margin-top: 18px;
+    float: left;
+    margin: 18px 18px 0 0;
 }
 .starlist ul li:hover h3{
     color: #e30002;
@@ -99,7 +100,9 @@
     margin: 18px 0 0 0;
 }
 .my-position .fengye{
-    text-align: center
+    text-align: center;
+    width: 100%;
+    clear: both;
 }
 .my-position .fengye .fenyebar{
 list-style: none;

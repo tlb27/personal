@@ -203,7 +203,7 @@ $(function(){
                 (async function(){
                         var res=await $.ajax({
                         url:"http://localhost:3000/user/register",
-                        type:"get",
+                        type:"post",
                         data:{uname,upwd,email,gender},
                         dataType:"json"
                     })
@@ -218,7 +218,9 @@ $(function(){
                     else{
                         if(confirm(res.msg)){
                             $("#lg_rg.l_r #login").show().siblings().hide()
-                        }
+                        }else{
+							 window.location.reload()
+						}
                     
                     
                     }

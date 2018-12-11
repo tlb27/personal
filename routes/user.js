@@ -56,11 +56,11 @@ router.get("/signout",(req,res)=>{
   res.end();
 })
 //用户注册
-router.get("/register",(req,res)=>{
-  var $uname=req.query.uname;
-  var $upwd=req.query.upwd;
-  var $email=req.query.email;
-  var $gender=req.query.gender;
+router.post("/register",(req,res)=>{
+  var $uname=req.body.uname;
+  var $upwd=req.body.upwd;
+  var $email=req.body.email;
+  var $gender=req.body.gender;
   var sql1="SELECT * FROM star_user WHERE uname=?"
   var sql2='INSERT INTO star_user VALUES(NULL,?,?,?,?)';
    pool.query(sql1,[$uname],(err,result)=>{

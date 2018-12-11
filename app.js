@@ -4,7 +4,7 @@ const bodyParser=require('body-parser')
 const session=require("express-session")
 //引入模块
 const user=require("./routes/user")
-
+const star_detail=require("./routes/star_detail")
 //构建web服务器
 var app=express();
 app.listen(3000);
@@ -22,7 +22,7 @@ app.use(session({
 
   //挂载路由
   app.use("/user",user);
-
+  app.use("/star",star_detail)
 
 
 

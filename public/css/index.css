@@ -255,23 +255,23 @@
     width: 100%;
     margin: 2px 0 0 0;
     padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     clear:both;
     overflow: hidden;
 }
 .hot .u-01 li{
     width: 142px;
     height: 142px;
-    float: left;
     position: relative;
-    margin: 29px 17px 0 0;
+    margin: 29px 0 0;
 }
 .hot .u-01 li a{
     text-decoration: none;
     color: #666;
 }
-.hot .u-01 li.last{
-    margin: 28px 0 0 0;
-}
+
 .tx{
     display: block;
     width: 100%;
