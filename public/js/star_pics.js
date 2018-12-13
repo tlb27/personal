@@ -17,7 +17,11 @@ $(function(){
                     var {products,pageCount}=output
                     for(var p of products){
                         html+=`<div><img src="${p.cover}" >
+<<<<<<< HEAD
                         <a href="star_photo.html?lid=${p.lid}">
+=======
+                        <a href="star_photo.html?star_name=${p.star_name}">
+>>>>>>> origin/master
                             <div class="cove">
                                 <p>${p.title}</p>
                             </div>

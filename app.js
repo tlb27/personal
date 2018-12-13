@@ -5,8 +5,11 @@ const session=require("express-session")
 //引入模块
 const user=require("./routes/user")
 const star_detail=require("./routes/star_detail")
+<<<<<<< HEAD
 const star_info=require("./routes/star_info")
 const star_news=require("./routes/news")
+=======
+>>>>>>> origin/master
 //构建web服务器
 var app=express();
 app.listen(3000);
@@ -25,8 +28,11 @@ app.use(session({
   //挂载路由
   app.use("/user",user);
   app.use("/star",star_detail)
+<<<<<<< HEAD
   app.use("/info",star_info)
   app.use("/news",star_news)
+=======
+>>>>>>> origin/master
 
 
 

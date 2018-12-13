@@ -1,4 +1,5 @@
 $(function(){
+<<<<<<< HEAD
     if(location.search.indexOf("lei=")!=-1){
         var lei=decodeURI(
           location.search.split("=")[1]
@@ -65,6 +66,8 @@ $(function(){
               }
         })
     }
+=======
+>>>>>>> origin/master
     // 判断分类导航进过页面跳转过来 后url中是否包含导航中a连接的href属性
 var urlstr=location.href;
 var urlstatus_lei=false;
@@ -80,6 +83,15 @@ $(".pic_bar ul li a").each(function(){
         });
         if (!urlstatus_lei) {$(".pic_bar ul li a").eq(0).addClass("link"); }
 
+<<<<<<< HEAD
+=======
+
+    var st=$("#main>.page_l>.page_lnews>.fengye>.fenyebar>li.st")
+    st.on("click",function(){
+        var li=$(this)
+        li.addClass("active").siblings().removeClass("active")
+    })
+>>>>>>> origin/master
 
   
     $("ul.page_rpic li a #zhezao").hover(function(){

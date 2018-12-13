@@ -1,4 +1,5 @@
 $(function(){
+<<<<<<< HEAD
     if(location.search.indexOf("star_name=")!=-1){
         var star_name=decodeURI(
           location.search.split("=")[1]
@@ -56,6 +57,59 @@ $(function(){
         var index=li.index()
         li.addClass("add").siblings().removeClass("add")
         $("#main .detail").eq(index).show().siblings().not(".personal").hide()
+=======
+    $.ajax({
+        url:"http://localhost:3000/personal.html",
+        type:"get",
+        success:function(res){
+            $("#main #detail").replaceWith(res)
+        }
+    })
+    var left_ul=$(".sidebar>ul")
+    left_ul.on("click","li",function(){
+        var li =$(this)
+        li.addClass("add").siblings().removeClass("add")
+    
+    //     switch (index)
+    //     {
+    //     case 1:
+    //     $.ajax({
+    //         url:"http://localhost:3000/person_new.html",
+    //         type:"get",
+    //         success:function(res){
+    //             $("#main #detail").replaceWith(res)
+    //         }
+    //     })
+    //     break;
+    //     case 2:
+    //     $.ajax({
+    //         url:"http://localhost:3000/person_photo.html",
+    //         type:"get",
+    //         success:function(res){
+    //             $("#main #detail").replaceWith(res)
+    //         }
+    //     })
+    //     break;
+    //     case 3:
+    //     $.ajax({
+    //         url:"http://localhost:3000/person_info.html",
+    //         type:"get",
+    //         success:function(res){
+    //             $("#main #detail").replaceWith(res)
+    //         }
+    //     })
+    //     break;
+    //     default:
+    //     $.ajax({
+    //         url:"http://localhost:3000/personal.html",
+    //         type:"get",
+    //         success:function(res){
+    //             $("#main #detail").replaceWith(res)
+    //         }
+    //     })
+    //   }
+    
+>>>>>>> origin/master
     })
 
     $("#main .pic_bar>ul").on("click","li",function(){

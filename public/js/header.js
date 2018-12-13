@@ -8,6 +8,7 @@ $(function(){
       success:function(res){
         $("#header").replaceWith(res)
 
+<<<<<<< HEAD
         var $btnSearch=
             $(".search a"),
           $input=
@@ -34,6 +35,29 @@ $(function(){
         var html=`<li><a href="star_detail.html?star_name=${star_name}">${star_name}<li>`
         $(html).appendTo("#liulan")
       }
+=======
+        //搜索框绑定事件
+        var $btnSearch=$("#header>nav>div img"),
+            $input=$btnSearch.parent().prev();
+        //2. 绑定事件
+        $btnSearch.click(function(){
+            //  3. 查找要修改的元素
+            //  4. 修改元素
+            var kw=$input.val().trim();
+            if(kw!=="")
+            location.href=`products.html?kwords=${kw}`;
+        })
+        $input.keyup(function(e){
+            if(e.keyCode==13) $btnSearch.click()
+        })
+
+        if(location.search.indexOf("kwords")!=-1){
+            var kwords=decodeURI(
+            location.search.split("=")[1]
+            )
+            $input.val(kwords)
+        }
+>>>>>>> origin/master
 
         $("#nav>.daohang>li:gt(0)")
         .hover(
@@ -44,7 +68,11 @@ $(function(){
         var urlstr=location.href;
         var urlstatus=false;
         $("#nav>ul.daohang>li>a").each(function(){
+<<<<<<< HEAD
             if ((urlstr ).indexOf($(this).attr('href').split("=")[0]) > -1&&$(this).attr('href')!=""){
+=======
+            if ((urlstr+"?" ).indexOf($(this).attr('href')) > -1&&$(this).attr('href')!=""){
+>>>>>>> origin/master
                 $(this).addClass("cur"); urlstatus = true;
             }else{
                 $(this).removeClass("cur");

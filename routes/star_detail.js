@@ -94,6 +94,7 @@ router.get("/getphoto1",(req,res)=>{
     }
 })
 
+<<<<<<< HEAD
 router.get("/photoDetail",(req,res)=>{
     var lid=req.query.lid
     var sql="select * from star_photo where lid=?"
@@ -122,6 +123,8 @@ router.get("/other",(req,res)=>{
     })
 })
 
+=======
+>>>>>>> origin/master
 
 
 
