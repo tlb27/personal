@@ -11,7 +11,7 @@
 .my-position{
     position: relative;
     width: 1100px;
-    margin: 0 auto
+    margin: 20px auto;
 }
 .t-03{
     clear: both;
@@ -61,20 +61,28 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between
+    overflow: hidden;
+}
+.starlist ul li:nth-child(6n+6){
+margin-right: 0;
 }
 .starlist ul li{
     width: 10.5rem;
-    
-    margin-top: 18px;
+    float: left;
+    margin: 18px 18px 0 0;
+}
+.starlist ul li:hover h3{
+    color: #e30002;
 }
 .starlist ul li span{
     width: 168px;
     height: 200px;
     display: block;
     overflow: hidden;
+}
+.starlist ul li span:hover{
+    box-shadow: 4px 4px 5px 0 #666;
+    transition-duration: .5s;
 }
 .starlist ul li span img{
     width: 100%;
@@ -92,7 +100,9 @@
     margin: 18px 0 0 0;
 }
 .my-position .fengye{
-    text-align: center
+    text-align: center;
+    width: 100%;
+    clear: both;
 }
 .my-position .fengye .fenyebar{
 list-style: none;
@@ -100,6 +110,9 @@ padding-left:0;
 overflow: hidden; 
 height:40px;
 margin: 0 auto;
+}
+.my-position .fengye .fenyebar li{
+    cursor: pointer;
 }
 .my-position>.fengye>.fenyebar li.ft{
     display: inline-block;
